@@ -8,6 +8,8 @@ PRODUCT_COPY_FILES += \
 # Inherit from our Hazy product configuration
 $(call inherit-product, vendor/hazy/main.mk)
 
+# Inherit device configuration
+$(call inherit-product, device/huawei/angler/aosp_angler.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_NAME := hazy_angler
